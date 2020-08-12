@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+/*
+
+Style page for QuikSave Productions
+   Author: Ryan K
+   Date: 8/5/2020
+   Filename: style.css
+
+*/
+
+
+*{
+   margin 0px
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+ nav{
+      display: flex;
+      background-image: url('vaporwave_background.png');
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+      background-color: rgb(175, 200, 175);
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh
+      background-color: ;
+      font-family: 'Poppins', sans-serif;
+}
+
+   .logo{
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-size: 65px;
+      text-shadow: 5px 5px 10px #f016ff;
+
+}
+
+
+   .nav-links{
+      display: flex;
+      justify-content: space-around;
+      width: 40%;
+}
+   
+   .nav-links li{
+      list-style: none;
+}
+
+   .nav-links a{
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 5px;
+      font-weight: bold;
+      font-size: 17px;
+      text-shadow: 5px 5px 10px #0bffdd;
+}
+
+   .burger{
+      display: none;
+      cursor: pointer;
+
+}
+
+   .burger div{
+      width: 25px;
+      height: 3px;
+      background-image: linear-gradient(#fffd00, #ffb400);
+      margin: 5px;
+      transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width:1024px){
+   .nav-links{
+      width: 40%;
+   }
+}
+
+@media screen and (max-width:768px){
+   body{
+      overflow-x: hidden;
+   }
+   .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-image: linear-gradient(#ef16ff, #5e62ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+   } 
+   .nav-links li{
+      opacity: 0;
+   }
+   .burger{
+      display: block;
+      background-color: linear-gradient(#059d7c, #05ffa1);
+   }
+
+}
+  
+   .nav-active{
+     transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade{
+   from{
+      opacity: 0;
+      transform: translateX(50px);
+   }
+   to{
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+.toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+   opacity: 0;
+}
+
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px,6px);
+}
+
+
+nav#nav-links a:link, nav#mainLinks a:visited {
+   color: red;
+}
+
+nav#nav-links a:hover, nav#mainLinks a:active {
+   color: #05ffa1;
+}
+
+</nav>
+
+
+/* HTML Styles */
+
+html {
+   background-image: url('vaporwave_background.png');
+   background-repeat: no-repeat; 
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: rgb(175, 200, 175);  
+   color: rgb(300, 275, 300);
+   font-size: 15px;
+   max-width: 1024px;
+   min-width: 768px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+
+/* Page Body Styles */
+
+body {
+   background-image: linear-gradient(to bottom right, #0bffdc, #ef16ff);
+   font-family: 'Poppins', sans-serif; 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+/* Body Header Styles */
+   
+   nav#topLinks {
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: (140, 250, 180);
+}
+
+   body > header > img {
+      display: block;
+      width: 100%;
+}
+
+   body > header > nav#topLinks {
+      background-image: url("outrun.gif");
+      height: 120px;
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+      background-color: rgb(175, 200, 175);  
+      line-height: 1.8em;
+      text-align: center;
+      padding: 10px 0px 5px 0px;
+}
+   
+   nav#topLinks a:link, nav#topLinks a:visited {
+      color: red;
+   }
+   nav#topLinks a:hover, nav#topLinks a:active {
+      color: #05ffa1;
+   }
+
+
+/* Article  Styles */
+article {   
+   clear: both;            
+   padding: 30px 20px 10px 20px;
+}
+
+article h1 {
+  background-image: linear-gradient(to bottom right, #ef16ff, #5865FF);
+  border: 10px purple;
+  box-shadow: 5px 10px rgb(119, 34, 217);
+  opacity: 85%;
+  color: #ffffff; 
+  clear: both;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  max-width: 1024px;
+  letter-spacing: 2px
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 5px #5015c2;
+}
+
+article header {
+   margin: 20px auto;   
+   width: 70% auto;
+   background-size: 500px;
+   background-image: 500px
+
+}
+
+article header h4 {
+   color: rgb(255, 247, 0);  
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 3px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 3em;
+   text-align: center;
+   text-shadow: 2px 2px 5px #5015c2;
+
+
+}
+
+/* Section Styles */
+
+section#leftColumn {
+   float: left;   
+   margin-left: 15%;
+   margin-right: 4%;
+   width: 40%;    
+}
+
+section#leftColumn p {
+   font-size: 1.2em;
+   line-height: 1.4em;  
+   margin-bottom: 20px;
+   text-align: justify;
+}
+
+.fa {
+  padding: 150px;
+  font-size: 250px;
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+   background: #F87A23;
+   color: white;
+}
+
+/* Aside Styles */
+
+aside {
+   color: #3555c6;
+   float: center;
+   margin-right: auto;
+   margin-top: auto;
+   margin-left: auto;
+   margin-bottom: auto;
+   padding: 30px;
+   width: 75%;
+
+}
+
+form {
+  max-width: 250px;
+  min-width: 250px;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  background: #ded9e3;
+  border: 10px purple;
+  box-shadow: 5px 10px rgb(119, 34, 217);
+  opacity: 90%;
+}
+
+legend {
+  padding: 10px;
+  background-color: #02ff9f;
+  color: rgb(119, 34, 217);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin: auto
+  max-width: 100px;
+  resize: horizontal;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+.column {
+  float: center;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+
+.row:after {
+  float: center;
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+  max-width: 100px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Footer Styles */
+
+footer {
+   background-color: rgb(119, 34, 217);
+   opacity: 20%
+   margin-left: 10px 5px 5px;
+   margin-right: 10px 5px 5px;
+   color: black;  
+   display: block;
+   padding: 35px;
+}
+
+body > footer > nav.vertical, body > footer > section {
+   float: left;
+   width: 100%; 
+}
+
+body > footer > nav.vertical > ul {
+   line-height: 3em;
+}
+
+footer nav a {
+   text-decoration: underline;
+}
+
+footer a:visited, footer a:link {
+   color: red;
+}
+
+footer a:hover, footer a:active {
+   color: #05ffa1;
+}
+
